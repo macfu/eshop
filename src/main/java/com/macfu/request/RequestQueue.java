@@ -41,9 +41,29 @@ public class RequestQueue {
 
     /**
      * 添加一个内存队列
+     *
      * @param queue
      */
     public void addQueue(ArrayBlockingQueue<Request> queue) {
         this.queues.add(queue);
+    }
+
+    /**
+     * 获得内存队列的数量
+     *
+     * @return
+     */
+    public int queueSize() {
+        return queues.size();
+    }
+
+    /**
+     * 获取指定位置的内存队列
+     *
+     * @param index
+     * @return
+     */
+    public ArrayBlockingQueue<Request> getQueue(int index) {
+        return queues.get(index);
     }
 }
