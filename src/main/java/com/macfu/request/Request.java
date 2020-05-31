@@ -6,4 +6,6 @@ package com.macfu.request;
 public interface Request {
 
     void process();
+
+    Integer getProduceId();
 }

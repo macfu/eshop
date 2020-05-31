@@ -35,4 +35,12 @@ public interface ProductInventoryService {
      * @param productInventory
      */
     void setProduceInventoryCache(ProductInventory productInventory);
+
+    /**
+     * 获取商品库存缓存
+     *
+     * @param productId
+     * @return
+     */
+    ProductInventory getProduceInventoryCache(Integer productId);
 }

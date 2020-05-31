@@ -25,4 +25,9 @@ public class ProductInventoryDBUpdateRequest implements Request {
         // 修改数据库中的库存
         productInventoryService.updateProduceInventory(productInventory);
     }
+
+    @Override
+    public Integer getProduceId() {
+        return productInventory.getProductId();
+    }
 }
