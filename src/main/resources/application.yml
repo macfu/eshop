@@ -4,3 +4,4 @@ spring:
     username: eshop
     password: eshop
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
